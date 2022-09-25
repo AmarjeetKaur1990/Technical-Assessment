@@ -4,7 +4,7 @@ import DateTimePicker from 'react-datetime-picker';
 import { Link, useNavigate } from 'react-router-dom';
 
 function CreateEvent() {
- const [eventData, setEventData] = useState({dateTime: new Date()});
+ const [eventData, setEventData] = useState({dateTime: '' +new Date()});
  let navigate = useNavigate();
 
 const handleChange = (event) =>{
