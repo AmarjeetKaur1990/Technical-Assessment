@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+body{
+  font-family: 'Helvetica';
+  font-style: normal;  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-secondary-purple-3{
+  background-color: #F6F2FF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-secondary-purple-2{
+  background-color: #EDE5FF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-secondary-purple-1{
+  background-color: #CCB6FF;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-purple-dark{
+  background-color: #240D57;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-purple-light{
+  background-color: #501FC1;
+}
+
+.btn-envited-pink{
+  background-color: #E87BF8;
+}
+
+.btn-envited-purple{
+  background-color: #8456EC;
+}
+
+.text-purple-dark{
+  color: #240D57;
+}
+
+.text-purple-light{
+  color: #501FC1;
+}
+
+.text-envited-purple{
+  color: #8456EC;
+}
+
+.text-envited-pink{
+  color: #E87BF8;
+}
+
+.landing-card{
+  border-radius: 18.15px;
+}
+
+.gradient-text-purple{
+  background: #8456EC;
+  background: linear-gradient(to right, #8456EC 0%, #E87BF8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
+
+.landing-right-section h1{
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.text-grey{
+  color:#4F4F4F;
+}
+
+.bg-grey-light{
+  background-color:  #DDDDDD;
+}
+
+.landing-right-section .sub-title{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.btn-create-evt{
+  width: 320px;
+  height: 55px;
+  border-radius: 10px;
+  padding:16px;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color:#fff;
+}
+
+.btn-gradient{
+  background: rgb(132,86,236);
+  background: linear-gradient(90deg, rgba(132,86,236,1) 0%, rgba(232,123,248,1) 100%);
+}
+
+.react-datetime-picker{
+  display:block !important;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.react-datetime-picker__wrapper{
+  height: calc(1.5em + 0.75rem + 2px);
+  border: 0px !important;
+}
+
+.event-name{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 55px;
+}
+
+.event-hostName{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.event-hostName span{
+  font-weight:600;
+}
+
+.prop-val{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px
+}
+
+.icon{
+  width: 56px;
+  height: 56px;
+  padding:12px;
+}
+
+.event-val{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4F4F4F;
+}
+
+.event-container{
+  background: #F6F2FF;
 }
