@@ -154,3 +154,7 @@ body{
 .event-container{
   background: #F6F2FF;
 }
+
+.card-img{
+  height:300px;
+}

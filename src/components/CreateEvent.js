@@ -15,15 +15,12 @@ const handleDateTimeChange = (val) =>{
 }
 
   return (
-    <div className='bg-grey-light vh-100'>
-        <div className='container card text-center pb-5'>
+    <div className='bg-grey-light'>
+        <div className='container card text-center pb-5 pl-0 pr-0'>
             <div className="card bg-dark text-white">
-                <img src="..." className="card-img" alt="..."/>
-                <div className="card-img-overlay">
-                    <h5 className="card-title">Plan your Event</h5>
-                </div>
+                <img src="https://cdn.pixabay.com/photo/2017/12/08/11/53/event-party-3005668__340.jpg" className="card-img" alt="..."/>
             </div>
-            <h1 className='text-envited-purple'>Plan your event</h1>
+            <h1 className='text-envited-purple mt-4'>Plan your event</h1>
             <div className='col-8 offset-2 text-left'>
                 <form>
                     <div className="form-group">

@@ -19,7 +19,7 @@ function Event() {
                         <p className='text-grey event-hostName'>Hosted by <span>{eventData.hostName}</span></p> 
                         
                         <div className='d-flex align-items-center mb-4 mt-5'>
-                            <div class="card p-2">
+                            <div className="card p-2">
                                 <FaCalendarAlt className='icon text-envited-purple' />
                             </div>
                             <div className='pl-2'>
@@ -28,7 +28,7 @@ function Event() {
                         </div> 
 
                         <div className='d-flex align-items-center'>
-                            <div class="card p-2">
+                            <div className="card p-2">
                                 <FaMapMarker className='icon text-envited-purple' />
                             </div>
                             <div className='pl-2'>
