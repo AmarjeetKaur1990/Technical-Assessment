@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
+import { Button } from 'react-bootstrap';
 import DateTimePicker from 'react-datetime-picker';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function CreateEvent() {
  const [eventData, setEventData] = useState({dateTime: new Date()});
+ let navigate = useNavigate();
 
 const handleChange = (event) =>{
     setEventData({...eventData,[event.target.name]:event.target.value});
@@ -12,6 +14,14 @@ const handleChange = (event) =>{
 
 const handleDateTimeChange = (val) =>{
     setEventData({...eventData, dateTime : val});
+}
+
+const checkValidation = () =>{
+    if(!eventData.eventName && ! eventData.hostName && !eventData.location){
+        alert('Please enter necessary details ex: host name, event Name and location');
+    }else{
+        navigate("/event",{state:{data:eventData}});
+    }
 }
 
   return (
@@ -44,7 +54,7 @@ const handleDateTimeChange = (val) =>{
                         <input type="file" onChange={handleChange} name="eventPic" className="form-control-file" id="event-photo"/>
                     </div>
                     <div className='text-center mt-5'>
-                        <Link to={eventData ? '/event' : '#'} state={{data:eventData}} type="submit" className="btn-envited-purple text-white text-decoration-none border-0 btn-create-evt">Next</Link>
+                        <Button onClick={checkValidation}  type="button" className="btn-envited-purple text-white text-decoration-none border-0 btn-create-evt">Next</Button>
                     </div>
                 </form>
             </div>
